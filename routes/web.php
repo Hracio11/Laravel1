@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\HoracioController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\OficinaController;
+use App\Http\Controllers\PedidosController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,3 +36,5 @@ Route::get('/horacio',[HoracioController::class,'listar']);
 Route::get('/clientes',[CustomerController::class,'listar']);
 
 Route::get('/oficinas',[OficinaController::class,'listar']);
+
+Route::get('/pedidos',[PedidosController::class,'listar']);
