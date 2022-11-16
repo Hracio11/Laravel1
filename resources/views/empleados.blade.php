@@ -9,7 +9,52 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
+                <table class="table">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Acciones</th>
+                        </tr>
+                        <tr>
+                            <td>NyNeyyy</td>
+                            <td>Michina</td>
+                            <td>91648153</td>
+                            <td>hinyneyyy@gmail.com</td>
+                            <td>
+                                <a href="#" class="btn btn-success">Editar</a>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-danger">ELiminar</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>NyNeyyy</td>
+                            <td>Michina</td>
+                            <td>91648153</td>
+                            <td>hinyneyyy@gmail.com</td>
+                            <td>
+                                <a href="#" class="btn btn-success">Editar</a>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-danger">ELiminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NyNeyyy</td>
+                            <td>Michina</td>
+                            <td>91648153</td>
+                            <td>hinyneyyy@gmail.com</td>
+                            <td>
+                                <a href="#" class="btn btn-success">Editar</a>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-danger">ELiminar</a>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
