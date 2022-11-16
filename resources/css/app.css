@@ -2,7 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.registrar{
-    float: right;
-    scroll-margin-top: -36px;
-}
