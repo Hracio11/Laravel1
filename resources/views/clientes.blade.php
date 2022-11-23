@@ -18,27 +18,16 @@
                             <th>Nombre</th>
                             <th>Apellidos</th>
                             <th>Telefono</th>
-                            <th>Email</th>
+                            <th>Ciudad</th>
                             <th>Acciones</th>
                         </tr>
-                        <tr>
-                            <td>NyNeyyy</td>
-                            <td>Michina</td>
-                            <td>91648153</td>
-                            <td>hinyneyyy@gmail.com</td>
-                            <td>
-                                <a href="#" class="btn btn-success">Editar</a>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-danger">ELiminar</a>
-                            </td>
-                        </tr>
 
+                        @foreach ($listado as $clientes) 
                         <tr>
-                            <td>NyNeyyy</td>
-                            <td>Michina</td>
-                            <td>91648153</td>
-                            <td>hinyneyyy@gmail.com</td>
+                            <td>{{$clientes->contactFirstName}}</td>
+                            <td>{{$clientes->contactLastName}}</td>
+                            <td>{{$clientes->phone}}</td>
+                            <td>{{$clientes->city}}</td>
                             <td>
                                 <a href="#" class="btn btn-success">Editar</a>
                             </td>
@@ -46,22 +35,8 @@
                                 <a href="#" class="btn btn-danger">ELiminar</a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>NyNeyyy</td>
-                            <td>Michina</td>
-                            <td>91648153</td>
-                            <td>hinyneyyy@gmail.com</td>
-                            <td>
-                                <a href="#" class="btn btn-success">Editar</a>
-                            </td>
-                            <td>
-                                <a href="#" class="btn btn-danger">ELiminar</a>
-                            </td>
-                        </tr>
+                        @endforeach
                     </table>
-
-
-
                 </div>
             </div>
         </div>
