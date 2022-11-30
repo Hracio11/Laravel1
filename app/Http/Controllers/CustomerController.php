@@ -18,5 +18,21 @@ class CustomerController extends Controller
     $listado = DB::table("customers")->get();
     return view('clientes', compact('listado'));
 
-}
+    }
+    function registrar(){
+        return view('clientes-registrar');
+    }
+    function guardar(){
+        print_r($_POST);
+        DB::table('customers')->insert([
+            'customerName'=> $_POST['contactFirstName'],
+            'contactFirstName'=> $_POST['contactFirstName'],
+            'contactLastName'=> $_POST['contactLastName'],
+            'phone'=> $_POST['phone'],
+            'city'=> $_POST['city'],
+            'addressLine1' => 'hola',
+            'country'=>'Peru'            
+        ]);
+        return redirect()->route('clientes');
+    }
 }
