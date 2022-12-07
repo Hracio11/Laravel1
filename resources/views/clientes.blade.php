@@ -4,7 +4,7 @@
             {{ __('Clientes') }}
         </h2>
 
-        <a href="#" class="btn btn-primary registrar">Registrar Cliente</a>
+        <a href="{{route('clientes.registrar')}}" class="btn btn-primary registrar">Registrar Cliente</a>
     </x-slot>
 
     <div class="py-12">
@@ -29,7 +29,7 @@
                             <td>{{$clientes->phone}}</td>
                             <td>{{$clientes->city}}</td>
                             <td>
-                                <a href="#" class="btn btn-success">Editar</a>
+                                <a href="/clientes/actualizar/{{$clientes->customerNumber}}" class="btn btn-success">Editar</a>
                             </td>
                             <td>
                                 <a href="#" class="btn btn-danger">ELiminar</a>
